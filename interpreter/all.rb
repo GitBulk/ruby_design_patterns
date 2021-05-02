@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class All < Expression
   def evaluate(dir)
-    dir = dir + '/' unless dir.end_with?('/')
+    dir += '/' unless dir.end_with?('/')
     results = []
     entries = Dir.entries(dir)
     entries.each do |entry|

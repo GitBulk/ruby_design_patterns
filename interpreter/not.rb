@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Not < Expression
-  def initialize(@expression)
+  def initialize(expression)
     @expression = expression
   end
 

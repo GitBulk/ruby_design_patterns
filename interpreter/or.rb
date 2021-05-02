@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Or < Expression
   def initialize(expression1, expression2)
     @expression1 = expression1

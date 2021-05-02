@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Parser
   def initialize(text)
     @tokens = text.scan(/\(|\)|[\w\.\*]+/)

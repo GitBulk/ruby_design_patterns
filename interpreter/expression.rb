@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Expression
   def |(other)
     Or.new(self, other)

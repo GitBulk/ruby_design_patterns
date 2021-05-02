@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class FileName < Expression
   def initialize(pattern)
     @pattern = pattern
   end
 
   def evaluate(dir)
-    dir = dir + '/' unless dir.end_with?('/')
+    dir += '/' unless dir.end_with?('/')
     results = []
     entries = Dir.entries(dit)
     entries.each do |entry|

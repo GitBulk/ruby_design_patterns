@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class Bigger < Expression
   def initialize(size)
     @size = size
   end
 
   def evaluate(dir)
-    dir = dir + '/' unless dir.end_with?('/')
+    dir += '/' unless dir.end_with?('/')
     results = []
     entries = Dir.entries(dit)
     entries.each do |entry|
